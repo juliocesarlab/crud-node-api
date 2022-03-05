@@ -7,5 +7,4 @@ clientsRouter.get('/clients', Clients.getAll)
 clientsRouter.get('/clients/disable', Clients.getAllDisable)
 clientsRouter.post('/client/create', Clients.create)
 clientsRouter.put('/client/edit/:id', Clients.update)
-//clientsRouter.delete('/client/delete/:id', Clients.delete)
 
