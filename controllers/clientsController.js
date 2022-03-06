@@ -6,8 +6,8 @@ class Clients {
     try{
       const result = await db.query("SELECT * FROM clients WHERE disabled=false ORDER BY id ASC");
       const { rows } = result;
-      
-      res.status(200).json(rows)
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).send(JSON.stringify(rows))
     } catch(err) {
       console.log("error" + err);
       res.status(500).send("Error: Contact admin");
