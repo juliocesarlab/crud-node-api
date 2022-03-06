@@ -6,6 +6,6 @@ export const db = new Client({
   user: process.env.DB_USER,
   port: process.env.DB_PORT,
   password: String(process.env.DB_PASS),
-  database: process.env.DB_NAME,
+  database: process.env.DB.NAME,
 })
 
